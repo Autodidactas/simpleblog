@@ -1,4 +1,4 @@
 *.pyc
-local_settings
+local_settings.py
 *.pyo
 *.db
