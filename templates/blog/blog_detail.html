@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block contenido %}
+	Titulo:<h2>{{object.titulo}}</h2><br>
+	Fecha:<h2>{{object.fecha}}</h2><br>
+	<h2>{{object.contenido|striptags }}</h2><br>
+	Autor:<h2>{{object.autor}}</h2><br>
+	Tags<h2>{{object.tags}}</h2><br>
+
+    {% if object.adjunto.all%}
+    	Archivos adjuntos: <br>
+    	{% for archivos in object.adjunto.all %}
+    		<br>
+    		<a href="/uploads/{{archivos.archivo}}">{{archivos.nombre}}</a>	
+    	{% endfor %}
+    {%endif%}
+
+{% endblock contenido %}

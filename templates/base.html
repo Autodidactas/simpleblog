@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+  	<title>{% block titulo %}
+		SimpleBlog
+	{% endblock titulo %}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+	
+	<link rel="stylesheet" href="{{ STATIC_URL }}css/bootstrap.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="{{ STATIC_URL }}css/simpleblog.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="{{ STATIC_URL }}css/bootstrap-responsive.css" type="text/css" media="screen">
+	 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+	 <script type="text/javascript" src="{{ STATIC_URL }}js/bootstrap.min.js"></script>
+	 {% block extra_js %} {% endblock extra_js %}
+
+
+</head>
+<body>
+	<div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="#">Simple Blog!!</a>
+          <div class="nav-collapse collapse">
+            <p class="navbar-text pull-right">
+              Login <a href="#" class="navbar-link">Usuario</a>
+            </p>
+            <ul class="nav">
+              <li class="active"><a href="/">Inicio</a></li>
+              <li><a href="/lista/">Post</a></li>
+              <li><a href="/acerca/de/">Acerca de...</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+
+      <!-- Main hero unit for a primary marketing message or call to action -->
+      <div class="hero-unit">
+        <h1>Bienvenido al blog de la comunidad!!</h1>
+        <p>Esta es la comunidad informatica de CentroAmerica y America del Sur.</p>
+        <p><a class="btn btn-primary btn-large">Leer mas &raquo;</a></p>
+      </div>
+
+      <!-- Example row of columns -->
+      <div class="row">
+      	{% block contenido %}
+      		
+        {% endblock contenido %}
+      </div>
+
+      <hr>
+
+      <footer>
+      	{% block pie %}
+      		<p>&copy; ComunidadPro 2012</p>
+      	{% endblock pie %}
+      </footer>
+
+    </div> <!-- /container -->
+
+</body>
+</html>

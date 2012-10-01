@@ -1,0 +1,130 @@
+[
+  {
+    "pk": 1, 
+    "model": "blog.categoria", 
+    "fields": {
+      "nombre": "categoeia"
+    }
+  }, 
+  {
+    "pk": 2, 
+    "model": "blog.categoria", 
+    "fields": {
+      "nombre": "Comida"
+    }
+  }, 
+  {
+    "pk": 3, 
+    "model": "blog.categoria", 
+    "fields": {
+      "nombre": "Tecnologia"
+    }
+  }, 
+  {
+    "pk": 4, 
+    "model": "blog.categoria", 
+    "fields": {
+      "nombre": "autodidactas"
+    }
+  }, 
+  {
+    "pk": 1, 
+    "model": "blog.posts", 
+    "fields": {
+      "categoria": 4, 
+      "contenido": "<p><strong style=\"font-family: Arial, Helvetica, sans; font-size: 11px; line-height: 14px; text-align: justify;\">Lorem Ipsum</strong><span style=\"font-family: Arial, Helvetica, sans; font-size: 11px; line-height: 14px; text-align: justify;\">&nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</span></p>", 
+      "fecha": "2012-09-01", 
+      "autor": 1, 
+      "tag": "Django,Python,", 
+      "titulo": "Primer post", 
+      "slug": "primer-post"
+    }
+  }, 
+  {
+    "pk": 2, 
+    "model": "blog.posts", 
+    "fields": {
+      "categoria": 3, 
+      "contenido": "<p><strong style=\"font-family: Arial, Helvetica, sans; font-size: 11px; line-height: 14px; text-align: justify;\">Lorem Ipsum</strong><span style=\"font-family: Arial, Helvetica, sans; font-size: 11px; line-height: 14px; text-align: justify;\">&nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</span></p>", 
+      "fecha": "2012-09-03", 
+      "autor": 1, 
+      "tag": "Python, ", 
+      "titulo": "Segundo posts", 
+      "slug": "segundo-posts"
+    }
+  }, 
+  {
+    "pk": 3, 
+    "model": "blog.posts", 
+    "fields": {
+      "categoria": 1, 
+      "contenido": "<p><strong style=\"font-family: Arial, Helvetica, sans; font-size: 11px; line-height: 14px; text-align: justify;\">Lorem Ipsum</strong><span style=\"font-family: Arial, Helvetica, sans; font-size: 11px; line-height: 14px; text-align: justify;\">&nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</span></p>", 
+      "fecha": "2012-09-13", 
+      "autor": 1, 
+      "tag": "nada", 
+      "titulo": "Tercer post", 
+      "slug": "tercer-post"
+    }
+  }, 
+  {
+    "pk": 4, 
+    "model": "blog.posts", 
+    "fields": {
+      "categoria": 4, 
+      "contenido": "<p><strong style=\"font-family: Arial, Helvetica, sans; font-size: 11px; line-height: 14px; text-align: justify;\">Lorem Ipsum</strong><span style=\"font-family: Arial, Helvetica, sans; font-size: 11px; line-height: 14px; text-align: justify;\">&nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</span></p>", 
+      "fecha": "2012-09-18", 
+      "autor": 1, 
+      "tag": "autodidatas", 
+      "titulo": "Cuarto post", 
+      "slug": "cuarto-post"
+    }
+  }, 
+  {
+    "pk": 5, 
+    "model": "blog.posts", 
+    "fields": {
+      "categoria": 2, 
+      "contenido": "<p><strong style=\"font-family: Arial, Helvetica, sans; font-size: 11px; line-height: 14px; text-align: justify;\">Lorem Ipsum</strong><span style=\"font-family: Arial, Helvetica, sans; font-size: 11px; line-height: 14px; text-align: justify;\">&nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</span></p>", 
+      "fecha": "2012-09-30", 
+      "autor": 1, 
+      "tag": "comida", 
+      "titulo": "Quinto post", 
+      "slug": "quinto-post"
+    }
+  }, 
+  {
+    "pk": 6, 
+    "model": "blog.posts", 
+    "fields": {
+      "categoria": 3, 
+      "contenido": "<p>hola este es el sexto post</p>", 
+      "fecha": "2011-10-07", 
+      "autor": 1, 
+      "tag": "Python, ", 
+      "titulo": "Sexto post", 
+      "slug": "sexto-post"
+    }
+  }, 
+  {
+    "pk": 7, 
+    "model": "blog.posts", 
+    "fields": {
+      "categoria": 1, 
+      "contenido": "<p><strong style=\"font-family: Arial, Helvetica, sans; font-size: 11px; line-height: 14px; text-align: justify;\">Lorem Ipsum</strong><span style=\"font-family: Arial, Helvetica, sans; font-size: 11px; line-height: 14px; text-align: justify;\">&nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</span></p>", 
+      "fecha": "2012-10-02", 
+      "autor": 1, 
+      "tag": "Django, ", 
+      "titulo": "Septimo post", 
+      "slug": "septimo-post"
+    }
+  }, 
+  {
+    "pk": 1, 
+    "model": "blog.archivos", 
+    "fields": {
+      "nombre": "archivo Cuarto post", 
+      "fk_post": 4, 
+      "archivo": "archivos/tuxinfo46.pdf"
+    }
+  }
+]

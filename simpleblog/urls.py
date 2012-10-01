@@ -15,4 +15,6 @@ urlpatterns = patterns('',
     # Uncomment the next line to enable the admin:
     url(r'^admin/', include(admin.site.urls)),
     url(r'^tagging_autocomplete/', include('tagging_autocomplete.urls')),
+    url(r'^', include('blog.urls')),
 )
+

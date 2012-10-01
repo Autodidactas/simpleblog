@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block contenido %}
+	{%for post in object_list%}
+	<div class="span4">
+		<h2> <a href="{{post.get_absolute_url}}">{{post.titulo}}</a><br></h2>
+		<p>{{post.contenido|striptags }}</p><br>
+		<p> <a class="btn" href="{{post.get_absolute_url}}">Ver detalle</a></p>
+	</div>
+	{%endfor%}
+
+{%if is_paginated %}
+ 	{% if page_obj.has_previous%}
+ 	<a href="{% url blog_list%}?page={{page_obj.previous_page_number}}">Anterior</a>
+ 	{%endif%}
+ 		pagina {{page_obj.number}} de {{page_obj.paginator.num_pages}}.
+
+ 	{% if page_obj.has_next%}
+ 	<a href="{% url blog_list%}?page={{page_obj.next_page_number}}">Siguiente</a>
+ 	{%endif%}
+
+{%endif%}
+
+
+
+{% endblock contenido %}
