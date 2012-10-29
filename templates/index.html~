@@ -4,7 +4,7 @@
 	{%for post in lista_post%}
 	<div class="span4">
 		<h2> <a href="{{post.get_absolute_url}}">{{post.titulo}}</a><br></h2>
-		<p>{{post.contenido|striptags|truncatewords_html:5}}</p><br>
+		<p>{{post.contenido|truncatewords_html:5}}</p><br>
 		<p> <a class="btn" href="{{post.get_absolute_url}}">Ver detalle</a></p>
 	</div>
 	{%endfor%}
